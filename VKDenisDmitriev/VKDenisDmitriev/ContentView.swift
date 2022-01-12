@@ -15,54 +15,63 @@ struct ContentView: View {
     private let padding = UIScreen.main.bounds.size.width/32
     
     var body: some View {
-        VStack {
-            Image("VKlogo")
+        ZStack {
+            Image("bg")
                 .resizable()
-                .frame(width: UIScreen.main.bounds.size.width/4, height: UIScreen.main.bounds.size.width/4)
-                .padding(.top, UIScreen.main.bounds.size.height/16)
+                .ignoresSafeArea()
+                .scaledToFill()
+                .frame(width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             
-            VStack {
-                HStack {
-                    Text("Login")
-                        .frame(maxWidth: UIScreen.main.bounds.size.width/4, alignment: .trailing)
-                    TextField("Login", text: $login)
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack {
+                    Image("VKlogo")
+                        .resizable()
+                        .frame(width: UIScreen.main.bounds.size.width/4, height: UIScreen.main.bounds.size.width/4)
+                        .padding(.top, UIScreen.main.bounds.size.height/16)
+                    
+                    VStack {
+                        HStack {
+                            Text("Login")
+                                .frame(maxWidth: UIScreen.main.bounds.size.width/4, alignment: .trailing)
+                            TextField("Login", text: $login)
+                                .padding(padding)
+                                .background(Color.white)
+                                .cornerRadius(padding)
+                        }
+                        .padding(.bottom, padding/4)
+                        
+                        HStack {
+                            Text("Password")
+                                .frame(maxWidth: UIScreen.main.bounds.size.width/4, alignment: .trailing)
+                            SecureField("Password", text: $password)
+                                .padding(padding)
+                                .background(Color.white)
+                                .cornerRadius(padding)
+                        }
+                        .padding(.bottom, padding)
+                        
+                        Button {
+                            print("Hello \(login) with password \(password)")
+                        } label: {
+                            Text("Login")
+                                .font(.title2)
+                                .bold()
+                        }
                         .padding(padding)
-                        .background(Color.white)
+                        .accentColor(.white)
+                        .frame(maxWidth: .infinity)
+                        .background(Color.blue)
                         .cornerRadius(padding)
+                        .disabled(login.isEmpty || password.isEmpty)
+                        
+                    }
+                    .padding(padding)
+                    
+                    Spacer()
                 }
-                .padding(.bottom, padding/4)
-                
-                HStack {
-                    Text("Password")
-                        .frame(maxWidth: UIScreen.main.bounds.size.width/4, alignment: .trailing)
-                    SecureField("Password", text: $password)
-                        .padding(padding)
-                        .background(Color.white)
-                        .cornerRadius(padding)
-                }
-                .padding(.bottom, padding)
-                
-                Button {
-                    print("Hello \(login) with password \(password)")
-                } label: {
-                    Text("Login")
-                        .font(.title2)
-                        .bold()
-                }
-                .padding(padding)
-                .accentColor(.white)
-                .frame(maxWidth: .infinity)
-                .background(Color.blue)
-                .cornerRadius(padding)
-                .disabled(login.isEmpty || password.isEmpty)
-                
+                .ignoresSafeArea()
             }
-            .padding(padding)
-            
-            Spacer()
         }
-        .background(Color.black.opacity(0.1))
-        .ignoresSafeArea()
     }
 }
 
