@@ -13,3 +13,12 @@ struct User: Identifiable {
     var name: String
     var photo: Image
 }
+
+func usersDictinary(users: [User]) -> [String:[User]] {
+    var dictinary: [String:[User]] = [:]
+    for user in users {
+        let index = String(user.name.prefix(1))
+        dictinary[index]?.append(user)
+    }
+    return dictinary
+}

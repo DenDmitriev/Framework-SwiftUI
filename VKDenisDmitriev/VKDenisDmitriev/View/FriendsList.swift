@@ -10,7 +10,6 @@ import SwiftUI
 struct FriendsList: View {
     
     var body: some View {
-        
         VStack {
             HStack {
                 Text("Friends")
@@ -19,12 +18,21 @@ struct FriendsList: View {
                     .padding(.leading, 15)
                 Spacer()
             }
-            List(users.sorted { $0.name < $1.name }) { user in
-                NavigationLink(
-                    destination: UserView(user: user),
-                    label: {
-                        UserCell(user: user)
-                    })
+            
+            let indexService = IndexService(users: users)
+
+            List {
+                ForEach(indexService.indexs, id: \.self) { letter in
+                    Section(header: Text(letter)) {
+                        ForEach(indexService.dictionary[letter]!, id: \.id) { user in
+                            NavigationLink(
+                                destination: UserView(user: user),
+                                label: {
+                                    UserCell(user: user)
+                                })
+                        }
+                    }
+                }
             }
         }
     }
