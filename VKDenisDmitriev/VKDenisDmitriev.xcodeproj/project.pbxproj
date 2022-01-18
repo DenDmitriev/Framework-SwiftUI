@@ -21,13 +21,13 @@
 		9573198D27908CE1004101EC /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9573198C27908CE1004101EC /* UserCell.swift */; };
 		957319902790993F004101EC /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9573198F2790993F004101EC /* GroupCell.swift */; };
 		9573199327909D21004101EC /* Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9573199227909D21004101EC /* Modifier.swift */; };
-		957463F62796CC4900AE8DE7 /* SectionIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957463F52796CC4900AE8DE7 /* SectionIndexView.swift */; };
 		958C4DAF279542800028B832 /* GalleryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958C4DAE279542800028B832 /* GalleryItem.swift */; };
 		95A122572791787B0067D9C0 /* LoginFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A122562791787B0067D9C0 /* LoginFieldView.swift */; };
 		95C264FF278D8D0800FCB4C5 /* VKDenisDmitrievApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C264FE278D8D0800FCB4C5 /* VKDenisDmitrievApp.swift */; };
 		95C26501278D8D0800FCB4C5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C26500278D8D0800FCB4C5 /* LoginView.swift */; };
 		95C26503278D8D1300FCB4C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95C26502278D8D1300FCB4C5 /* Assets.xcassets */; };
 		95C26506278D8D1300FCB4C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95C26505278D8D1300FCB4C5 /* Preview Assets.xcassets */; };
+		95E97E592797015D000FACC9 /* IndexSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E97E582797015D000FACC9 /* IndexSection.swift */; };
 		95F87EEE279187E1002AF6FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F87EED279187E1002AF6FC /* ContentView.swift */; };
 		95F87F372791C6D5002AF6FC /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F87F362791C6D5002AF6FC /* UserView.swift */; };
 		95F87F3A2791C733002AF6FC /* UserImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F87F392791C733002AF6FC /* UserImage.swift */; };
@@ -48,7 +48,6 @@
 		9573198C27908CE1004101EC /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		9573198F2790993F004101EC /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		9573199227909D21004101EC /* Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifier.swift; sourceTree = "<group>"; };
-		957463F52796CC4900AE8DE7 /* SectionIndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionIndexView.swift; sourceTree = "<group>"; };
 		958C4DAE279542800028B832 /* GalleryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryItem.swift; sourceTree = "<group>"; };
 		95A122562791787B0067D9C0 /* LoginFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFieldView.swift; sourceTree = "<group>"; };
 		95C264FB278D8D0800FCB4C5 /* VKDenisDmitriev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKDenisDmitriev.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +56,7 @@
 		95C26502278D8D1300FCB4C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95C26505278D8D1300FCB4C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		95C26507278D8D1300FCB4C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95E97E582797015D000FACC9 /* IndexSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexSection.swift; sourceTree = "<group>"; };
 		95F87EED279187E1002AF6FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		95F87F362791C6D5002AF6FC /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		95F87F392791C733002AF6FC /* UserImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImage.swift; sourceTree = "<group>"; };
@@ -76,6 +76,7 @@
 		954B0A5E2791CD4400118FF7 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				95E97E582797015D000FACC9 /* IndexSection.swift */,
 				9573198C27908CE1004101EC /* UserCell.swift */,
 				9573198F2790993F004101EC /* GroupCell.swift */,
 				95F87F392791C733002AF6FC /* UserImage.swift */,
@@ -102,7 +103,6 @@
 				95F87EED279187E1002AF6FC /* ContentView.swift */,
 				954B0A632791D01A00118FF7 /* UserTabView.swift */,
 				954B0A84279200F600118FF7 /* FriendsList.swift */,
-				957463F52796CC4900AE8DE7 /* SectionIndexView.swift */,
 				95067DB32792B366004B8961 /* GroupList.swift */,
 				954B0A662791D60800118FF7 /* PhotoView.swift */,
 				95F87F362791C6D5002AF6FC /* UserView.swift */,
@@ -232,6 +232,7 @@
 			files = (
 				954B0A8A2792026900118FF7 /* User.swift in Sources */,
 				95F87F3A2791C733002AF6FC /* UserImage.swift in Sources */,
+				95E97E592797015D000FACC9 /* IndexSection.swift in Sources */,
 				951918FB279543BE006FABAA /* GalleryRow.swift in Sources */,
 				95C26501278D8D0800FCB4C5 /* LoginView.swift in Sources */,
 				9519190127954977006FABAA /* IndexService.swift in Sources */,
@@ -248,7 +249,6 @@
 				957319902790993F004101EC /* GroupCell.swift in Sources */,
 				95A122572791787B0067D9C0 /* LoginFieldView.swift in Sources */,
 				95C264FF278D8D0800FCB4C5 /* VKDenisDmitrievApp.swift in Sources */,
-				957463F62796CC4900AE8DE7 /* SectionIndexView.swift in Sources */,
 				95F87F372791C6D5002AF6FC /* UserView.swift in Sources */,
 				9573199327909D21004101EC /* Modifier.swift in Sources */,
 				954B0A85279200F600118FF7 /* FriendsList.swift in Sources */,

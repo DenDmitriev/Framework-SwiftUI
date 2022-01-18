@@ -20,43 +20,22 @@ struct FriendsList: View {
             }
             
             let indexService = IndexService(users: users)
-            
+
             ScrollViewReader(content: { proxy in
-                ZStack {
-                    
-                    List {
-                        ForEach(indexService.indexs, id: \.self) { letter in
-                            Section(header: Text(letter)) {
-                                ForEach(indexService.dictionary[letter]!, id: \.id) { user in
-                                    NavigationLink(
-                                        destination: UserView(user: user),
-                                        label: {
-                                            UserCell(user: user)
-                                        })
-                                }
-                            }
-                        }
-                    }
-                    
-                    HStack {
-                        Spacer()
-                        VStack {
-                            ForEach(indexService.indexs, id: \.self) { letter in
-                                Button(action: {
-                                    print("letter = \(letter)")
-                                    withAnimation {
-                                        proxy.scrollTo(letter)
-                                    }
-                                }, label: {
-                                    Text(letter)
-                                        .font(.headline)
-                                        .padding(.trailing, 8)
-                                        .foregroundColor(.blue)
-                                })
+                List {
+                    ForEach(indexService.indexs, id: \.self) { letter in
+                        Section(header: Text(letter)) {
+                            ForEach(indexService.dictionary[letter]!, id: \.id) { user in
+                                NavigationLink(
+                                    destination: UserView(user: user),
+                                    label: {
+                                        UserCell(user: user)
+                                    })
                             }
                         }
                     }
                 }
+                .overlay(IndexSection(indexService: indexService, proxy: proxy))
             })
         }
     }
