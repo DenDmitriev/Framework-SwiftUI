@@ -11,7 +11,7 @@ struct IndexService {
     
     var users: [User]
     var indexs: [String] {
-        Array(dictionary.keys.sorted())
+        Array(dictionary.keys.sorted().map({ $0.uppercased() }))
     }
     
     var dictionary: [String:[User]] {
