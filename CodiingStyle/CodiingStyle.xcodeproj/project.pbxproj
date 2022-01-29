@@ -17,8 +17,6 @@
 		95EBA05927A44F3B00C67F85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95EBA02D27A44F3A00C67F85 /* Assets.xcassets */; };
 		95EBA06D27A44F4900C67F85 /* CodingStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EBA06C27A44F4900C67F85 /* CodingStyle.swift */; };
 		95EBA06E27A44F4900C67F85 /* CodingStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EBA06C27A44F4900C67F85 /* CodingStyle.swift */; };
-		95EBA08727A4591600C67F85 /* CodingStyleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EBA08627A4591600C67F85 /* CodingStyleService.swift */; };
-		95EBA08827A4591600C67F85 /* CodingStyleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EBA08627A4591600C67F85 /* CodingStyleService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +52,6 @@
 		95EBA05127A44F3B00C67F85 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		95EBA05327A44F3B00C67F85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95EBA06C27A44F4900C67F85 /* CodingStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodingStyle.swift; sourceTree = "<group>"; };
-		95EBA08627A4591600C67F85 /* CodingStyleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingStyleService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +103,6 @@
 			children = (
 				95EBA02B27A44F3900C67F85 /* CodiingStyleApp.swift */,
 				95EBA02C27A44F3900C67F85 /* ContentView.swift */,
-				95EBA08627A4591600C67F85 /* CodingStyleService.swift */,
 				95EBA06C27A44F4900C67F85 /* CodingStyle.swift */,
 				95EBA02D27A44F3A00C67F85 /* Assets.xcassets */,
 			);
@@ -317,7 +313,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				95EBA06D27A44F4900C67F85 /* CodingStyle.swift in Sources */,
-				95EBA08727A4591600C67F85 /* CodingStyleService.swift in Sources */,
 				95EBA05627A44F3B00C67F85 /* ContentView.swift in Sources */,
 				95EBA05427A44F3B00C67F85 /* CodiingStyleApp.swift in Sources */,
 			);
@@ -328,7 +323,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				95EBA06E27A44F4900C67F85 /* CodingStyle.swift in Sources */,
-				95EBA08827A4591600C67F85 /* CodingStyleService.swift in Sources */,
 				95EBA05727A44F3B00C67F85 /* ContentView.swift in Sources */,
 				95EBA05527A44F3B00C67F85 /* CodiingStyleApp.swift in Sources */,
 			);
