@@ -17,10 +17,11 @@ struct ContentView: View {
             TextField("Insert your text", text: $text)
                 .onChange(of: text, perform: { text in
                     textFromated = text
-                    self.text = textFromated
                 })
                 .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
                 .multilineTextAlignment(.center)
+            Text(textFromated)
+                .foregroundColor(.gray)
         }
     }
 }

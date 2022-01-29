@@ -5,7 +5,7 @@
 //  Created by Denis Dmitriev on 28.01.2022.
 //
 
-import Foundation
+import SwiftUI
 
 enum Style {
     case camelCase, snakeCase, kebabCase
